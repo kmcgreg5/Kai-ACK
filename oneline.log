@@ -1,0 +1,48 @@
+* 978266d Added retry loop to getting number of certificates in QC section
+* b8b7aea Release 1.94 Changed the Google Sheets Service account to one of the companys instead of my personal account
+* 2f37ff2 Added retry loop to logout function in the Ruckus Library Removed print line
+* 7acd72b Added try/except retry loop for a requests connection error on the logoutRuckus function
+* ec08c4e Re-added log files
+* 94e75d6 Added log files 5/16/2019
+* 469a567 added publisher library for ease of access
+* 61b062d changed a comment
+* 76bc65f Changed more of the boolean if statements to compare directly to True/False
+* dcf5715 Changed all boolean if statements to compare to True/False directly Removed Publisher messages and associated function from panelProgramMainThread as it wasn't necessary due to pass by object reference
+* 5e2756c Fixed exceptions seperated by period instead of comma in resetPanels thread Removed the continueProgramming var that detects an incorrect password when programming the Mikrotik in the first stage
+* 3a42a08 Added the main code to an if statement to only run if originating from the source file
+* ecdf63b Added an if statement to detect if an encryption key has not been loaded/imported into the executable
+* 5794498 Added credit for SSH cluster reading and system excepthook wrapper
+* f537f86 Release 1.93 Set daemon to False in the exception upload thread
+* c549505 Made credentials a global variable for ease of access as its changing soon
+* fca5a61 Changed googlesheets function to be more query efficient when initializing using get_all_values()
+* 4f42889 Added UI Charts to the repo
+* c21ff96 Added an Options Menu documentation PDF
+* 2953db5 Added a documentation pdf
+* 99cfdca Changed how the optionsMenu tests IPs to make it more reliable
+* 700abe2 Added icon file
+*   8697b98 Merge branch 'master' of https://github.com/kmcgreg5/Kai-ACK
+|\  
+| * 1ae0330 Update README.md
+| * e4035f8 Create README.md
+* | bae2008 Added README file
+* | 15696c7 Added some necessary files
+|/  
+* 6087aa0 Added my name at the top of each file that I created and wrote Added an exception to the wattbox thread when the wattbox is being configured Added an exception to adding clusters to the cluster list, a connection error when communicating with the controller
+* 47018cf 1.92 Release Added a menu item to import SSIDs from a file, they should be seperated with newline charectors Added a 'No NAF' Options to the optionsList that uses imported SSIDs and exports panel information to a text file
+* 98e0bb8 Added functionality to the use cluster button and the program will now use a selected cluster over the info on the NAF if the option is checked in the options menu (override NAF controller) Started adding functionality for reading SSIDS from file and writing them to file, expanding that now
+* 524bd03 1.91 Release Changed the upload exceptions thread to be non-daemon to ensure error reporting
+* 6fca2e3 Removed a print
+* 1867bb7 Fixed the browser staying open when configuring the wattbox and performing quality control by catching and re-raising the exception
+* 9328218 Changed retry loops to use wx.CallAfter when updating status text
+* eccd0c3 took out some test code from panelQuery
+* a266ecb Fixed long-standing logic error when QCing AP WLAN groups in Ruckus Library
+* 2ad7be8 Prettyed it up a little more
+* 75871d7 Prettying up the code a little Saving before making more edits
+* 6a88a69 Changed message displayed when encrypted settings or cluster file is not found Change var names in UI.py to be more accurate after previous changes
+* 7a5d110 Added an exception to the Mikrotik Package checking
+* 984f85b Fixed ssh pipes getting full and causing errors 	This is done by reading the output in clusters, organizing them into one big string, and then seperating them into a list of lines
+* 301f83b 1.90 Added comments mostly while I was pretty tired, I want to sleep. Thanks
+* 710c1c3 1.89 Fixed an import removed in error
+* 14bf5b1 1.89 Added encryption to the cluster.txt file that stores saved cluster information
+* 770fc9d 1.88 Added functionality for the new site files
+* 1891e51 Initial commit on build 1.87:
